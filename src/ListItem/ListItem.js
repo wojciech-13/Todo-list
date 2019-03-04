@@ -1,11 +1,11 @@
 import React from 'react';
 import './ListItem.css';
 
-function ListItem(){
+function ListItem(props){
     return(
         <div className="list-item">
             <input type="checkbox"></input>
-            <p>Placeholder text</p>
+            <p>{props.item.text}</p>
         </div>
     )
 }

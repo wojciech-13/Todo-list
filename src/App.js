@@ -5,15 +5,12 @@ import todosData from './todosData.js';
 
 class App extends Component {
   render() {
-    const listItems = todosData.map(item=> <ListItem  />)
+    const listItems = todosData.map(item=> <ListItem  key={item.id} item={item} />);
     return (
       <div className="App">
         <header className="App-header">
           <div className="todo-list">
-            <ListItem />
-            <ListItem />
-            <ListItem />
-            <ListItem />
+            {listItems}
           </div>
         </header>
       </div>

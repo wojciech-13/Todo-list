@@ -4,7 +4,7 @@ import './ListItem.css';
 function ListItem(props){
     return(
         <div className="list-item">
-            <input type="checkbox"></input>
+            <input type="checkbox" checked={props.item.completed}></input>
             <p>{props.item.text}</p>
         </div>
     )

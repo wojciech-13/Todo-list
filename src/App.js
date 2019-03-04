@@ -28,7 +28,9 @@ class App extends Component {
   }
 
   render() {
-    const listItems = this.state.listData.map(item=> <ListItem  handleChange={this.handleChange} key={item.id} item={item} />);
+
+    const listItems = this.state.listData.map(item=> <ListItem  key={item.id} handleChange={this.handleChange}  item={item} />);
+
     return (
 
       <div className="App">

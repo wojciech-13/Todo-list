@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import ListItem from './components/ListItem.js'
+import ListItem from './components/ListItem.js';
+import todosData from './todosData.js';
 
 class App extends Component {
   render() {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TodoItem from './TodoItem';
 
 class App extends Component {
   render() {
@@ -9,8 +10,11 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Editkoa <code>src/App.js</code> and save to reload.
           </p>
+          
+            <TodoItem />
+          
           <a
             className="App-link"
             href="https://reactjs.org"

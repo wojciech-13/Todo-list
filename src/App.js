@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import ListItem from './components/ListItem.js';
+import ListItem from './ListItem/ListItem.js';
 import todosData from './todosData.js';
 
 class App extends Component {
   render() {
+    const listItems = todosData.map(item=> <ListItem  />)
     return (
       <div className="App">
         <header className="App-header">
